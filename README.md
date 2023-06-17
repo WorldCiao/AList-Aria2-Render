@@ -27,7 +27,7 @@
 
 ### 数据库
 
-您可能需要使用另一个远程 MySQL 数据库，因为默认的sqlite重新部署将丢失您的全部数据。
+您可能需要使用另一个远程 MySQL 数据库 或是 PostgreSQL 数据库，因为默认的sqlite重新部署将丢失您的全部数据。
 
 下面是一些免费数据库:
 
@@ -35,7 +35,6 @@
 - https://remotemysql.com/
 - https://www.freesqldatabase.com/
 - https://planetscale.com/
-- https://bit.io/
 - https://www.elephantsql.com/
 - https://scalingo.com/
 - http://cloud.yugabyte.com/
@@ -56,12 +55,11 @@
 >   "DB_NAME":"数据库名称",
 >   "DB_TABLE_PREFIX":"alist_",
 >   "DB_SSL_MODE":"true"
+### PostgreSQL
 > ```
-
-### bit数据库示例 https://bit.io
 > ```json
 >   "DB_TYPE": "postgres",
->   "DB_HOST": "db.bit.io",
+>   "DB_HOST": "sql.com",
 >   "DB_PORT": "5432",
 >   "DB_USER": "账号",
 >   "DB_PASS": "密码",
@@ -69,6 +67,7 @@
 >   "DB_TABLE_PREFIX": "alist_",
 >   "DB_SSL_MODE": "require"
 > 
+
 
 ### db4free示例 https://db4free.net
 > ```json
